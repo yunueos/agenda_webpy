@@ -1,0 +1,17 @@
+$def with(persona)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Borrar Persona</title>
+</head>
+<body>
+    <h2>Borrar Persona</h2>
+    <form method="POST">
+        <p>¿Estás seguro que deseas borrar esta persona?</p>
+        <p><strong>Nombre:</strong> $persona[1]</p>
+        <p><strong>Email:</strong> $persona[2]</p>
+        <input type="submit" value="Borrar">
+        <a href="/">Cancelar</a>
+    </form>
+</body>
+</html>

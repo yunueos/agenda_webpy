@@ -6,6 +6,7 @@ $def with(personas)
     </head>
     <body>
         <h1>SQLITE3 Personas</h1>
+        <a href="/insertar">insertar</a><br><br>
 
         <!--<form method="POST">
             <label>Nombre</label>
@@ -17,7 +18,7 @@ $def with(personas)
             <input type="submit" value="Agregar">
         </form>-->
 
-        <table>
+        <table border="1">
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -32,7 +33,11 @@ $def with(personas)
                     <tr>
                         <td>$fila[1]</td>
                         <td>$fila[2]</td>
+                        <!--<td><a href="/detalle/$fila[0]">detalle</a></td>
+                        <td><a href="/editar/$fila[0]">editar</a></td>
+                        <td><a href="/borrar/$fila[0]">borrar</a></td>-->
                     </tr>
             </tbody>
+        </table>
     </body>
 </html>

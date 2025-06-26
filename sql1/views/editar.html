@@ -1,0 +1,18 @@
+$def with(persona)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Editar Persona</title>
+</head>
+<body>
+    <h2>Editar Persona</h2>
+    <form method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" value="$persona[1]"><br>
+        <label>Email:</label>
+        <input type="text" name="email" value="$persona[2]"><br><br>
+        <input type="submit" value="Actualizar">
+        <a href="/">Cancelar</a>
+    </form>
+</body>
+</html>
