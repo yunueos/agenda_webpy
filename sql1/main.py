@@ -77,14 +77,14 @@ class Detalle:
                 "error": None
             }
             print(f"RESPUESTA: {respuesta}")
-            return render.editar(respuesta)
+            return render.detalle(respuesta)
         except sqlite3.OperationalError as error:
             print(f"Error 004: {error.args[0]}")
             respuesta={
                 "persona" : {},
                 "error": "Error en la base de datos"
             }
-            return render.editar(respuesta)
+            return render.detalle(respuesta)
 
 class Editar:
     def GET(self, id_persona):
